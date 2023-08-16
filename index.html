@@ -28,10 +28,24 @@
 </head>
 
 <body>
+<div class="nav">
+    <div class="title">
+        <!-- LOGO -->
+        <img class="logo" src="img/appicon.png" alt="LOGO">
+        <!-- 标题 -->
+        <div class="text">
+            <H1>矿书 OreBooks</H1>
+            <p>哆啦A梦：大熊的牧场物语 挖矿标记工具 Doraemon Story Of Seasons Miner Marker</p>
+        </div>
+    </div>
+    <!-- 工具栏 -->
+    <div class="tool">
+        <!-- 在此处放置按钮渲染的标签 -->
+        <button class="github-button" onclick="window.location.href='https://github.com/kailous/Doraemon-Story-Of-Seasons-Miner-Marker'" aria-label="在 GitHub 上给 kailous/Doraemon-Story-Of-Seasons-Miner-Marker 点赞">点赞</button>
+        <button class="reset">重置标记</button>
+    </div>
+</div>
 <div class="container">
-    <!-- 标题 -->
-    <H1 class="title">大雄的牧场物语挖矿标记工具<br>Doraemon Story Of Seasons Miner Marker</H1>
-
     <!-- 地图 -->
     <div class="gridContainer">
         <img class="grid" src="img/background.png" alt="游戏背景图">
@@ -51,38 +65,31 @@
             <div class="menu-item" data-value="石头">石块</div>
         </div>
     </div>
-
-    <!-- 工具栏 -->
-    <div class="tool">
-        <!-- 在此处放置按钮渲染的标签 -->
-        <a class="github-button" href="https://github.com/kailous/Doraemon-Story-Of-Seasons-Miner-Marker" data-icon="octicon-star" aria-label="在 GitHub 上给 kailous/Doraemon-Story-Of-Seasons-Miner-Marker 点赞">点赞</a>
-        <button class="reset">重置标记</button>
-    </div>
 </div>
 <script src="script.js"></script>
 <!-- 在头部或 body 结束前放置此标签 -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-<script>
-    // 监听窗口大小变化事件
-    window.addEventListener('resize', () => {
-        // 获取根元素
-        const rootElement = document.body;
+<!--<script async defer src="https://buttons.github.io/buttons.js"></script>-->
+<!--<script>-->
+<!--    // 监听窗口大小变化事件-->
+<!--    window.addEventListener('resize', () => {-->
+<!--        // 获取根元素-->
+<!--        const rootElement = document.body;-->
 
-        // 计算缩放比例
-        const scaleValue = window.innerWidth / 1000; // 假设1200是原始设计的宽度
+<!--        // 计算缩放比例-->
+<!--        const scaleValue = window.innerWidth / 1000; // 假设1200是原始设计的宽度-->
 
-        // 设置缩放样式
-        rootElement.style.transform = `scale(${scaleValue})`;
-        rootElement.style.transformOrigin = 'center top';
+<!--        // 设置缩放样式-->
+<!--        rootElement.style.transform = `scale(${scaleValue})`;-->
+<!--        rootElement.style.transformOrigin = 'center top';-->
 
-        // 避免出现滚动条
-        document.body.style.overflow = 'hidden';
-    });
+<!--        // 避免出现滚动条-->
+<!--        document.body.style.overflow = 'hidden';-->
+<!--    });-->
 
-    // 初始化时执行一次
-    window.dispatchEvent(new Event('resize'));
+<!--    // 初始化时执行一次-->
+<!--    window.dispatchEvent(new Event('resize'));-->
 
-</script>
+<!--</script>-->
 </body>
 
 </html>
