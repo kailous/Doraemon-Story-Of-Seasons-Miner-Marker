@@ -62,6 +62,18 @@
 <script src="script.js"></script>
 <!-- 在头部或 body 结束前放置此标签 -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
+<script>
+    // 获取 body 元素
+    const bodyElement = document.body;
+
+    // 缩放比例，可以根据需要调整
+    const scaleValue = 0.5;
+
+    // 设置缩放样式
+    bodyElement.style.transform = `scale(${scaleValue})`;
+    bodyElement.style.transformOrigin = 'center top';
+
+</script>
 </body>
 
 </html>
